@@ -1,6 +1,6 @@
 ﻿namespace Course_Management_System
 {
-    partial class Form1
+    partial class CMS
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            datagrid = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)datagrid).BeginInit();
+            SuspendLayout();
+            // 
+            // datagrid
+            // 
+            datagrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            datagrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            datagrid.Location = new Point(186, 29);
+            datagrid.Name = "datagrid";
+            datagrid.ReadOnly = true;
+            datagrid.Size = new Size(602, 507);
+            datagrid.TabIndex = 0;
+            // 
+            // CMS
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 548);
+            Controls.Add(datagrid);
+            Name = "CMS";
+            Text = "Course Management System";
+            ((System.ComponentModel.ISupportInitialize)datagrid).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView datagrid;
     }
 }
